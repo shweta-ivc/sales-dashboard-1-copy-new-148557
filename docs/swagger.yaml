@@ -1,0 +1,29 @@
+openapi: 3.0.0
+info:
+  title: Sales Dashboard 1
+  version: 1.0.0
+servers:
+  - url: http://localhost:3000
+paths:
+  /api/auth/register:
+    post:
+      summary: Register new user
+  /api/auth/login:
+    post:
+      summary: Login user
+  /api/auth/logout:
+    post:
+      summary: Logout user
+  /api/users:
+    get:
+      summary: Get all users
+  /api/funnel:
+    get:
+      summary: Get all funnel data
+    post:
+      summary: Create new funnel entry
+  /api/funnel/[id]:
+    put:
+      summary: Update funnel entry
+    delete:
+      summary: Delete funnel entry
